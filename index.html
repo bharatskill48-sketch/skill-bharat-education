@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Certificate - Skill Bharat Education</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* A4 Page Container */
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            background: #ffffff;
+            padding: 15mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Watermark Logo Styling */
+        .a4-page::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            height: 450px;
+            background-image: url('your-logo.png'); /* এখানে আপনার লোগোর ফাইল নেম বা লিংক দিন */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.07; /* লেখার ওপর প্রভাব না পড়ার জন্য হালকা করা হয়েছে */
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Certificate Content Wrapper to stay above watermark */
+        .certificate-container {
+            position: relative;
+            z-index: 2;
+            border: 4px solid #1a365d; /* বর্ডার */
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 15px;
+        }
+
+        .header h2 {
+            font-size: 22px;
+            color: #1a365d;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .cert-title-box {
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+            letter-spacing: 1px;
+        }
+
+        .sub-heading {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .cert-body-text {
+            text-align: center;
+            font-size: 12px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Details Section (Grid/Table layout) */
+        .details-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .info-table {
+            width: 70%;
+            font-size: 12px;
+            border-collapse: collapse;
+        }
+
+        .info-table td {
+            padding: 5px 0;
+        }
+
+        .info-table td.label {
+            font-weight: bold;
+            color: #333;
+            width: 35%;
+        }
+
+        .qr-section {
+            width: 25%;
+            text-align: center;
+        }
+
+        .qr-section img {
+            width: 90px;
+            height: 90px;
+        }
+
+        .verify-btn {
+            display: inline-block;
+            background-color: #1a365d;
+            color: white;
+            font-size: 10px;
+            padding: 4px 8px;
+            margin-top: 5px;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        /* Barcode Section */
+        .barcode-section {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .barcode-section img {
+            height: 35px;
+            max-width: 250px;
+        }
+
+        .barcode-text {
+            font-size: 10px;
+            color: #555;
+            margin-top: 3px;
+        }
+
+        /* Footer / Signatures */
+        .footer-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .signature-box {
+            text-align: center;
+            font-size: 11px;
+            border-top: 1px solid #333;
+            padding-top: 5px;
+            width: 150px;
+            color: #333;
+        }
+
+        .footer-slogan {
+            font-size: 10px;
+            font-style: italic;
+            color: #666;
+            text-align: right;
+        }
+
+        /* Print Media Query to fit exact A4 size without extra pages */
+        @media print {
+            body {
+                background: none;
+            }
+            .a4-page {
+                box-shadow: none;
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-page">
+        <div class="certificate-container">
+            
+            <!-- Header -->
+            <div class="header">
+                <h2>SKILL BHARAT EDUCATION</h2>
+                <p>Skilled India • Developed India</p>
+            </div>
+
+            <div class="cert-title-box">EXPERIENCE CERTIFICATE</div>
+            <div class="sub-heading">TO WHOM IT MAY CONCERN</div>
+
+            <p class="cert-body-text">
+                This is to certify that the aforementioned candidate has completed the training details recorded by Skill Bharat Education. Please scan the QR code to verify the certificate online.
+            </p>
+
+            <!-- Details & QR -->
+            <div class="details-section">
+                <table class="info-table">
+                    <tr>
+                        <td class="label">Student Name</td>
+                        <td>: RASHIDUL RAKAMAN SHAIKH</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Father's Name</td>
+                        <td>: ARMAN SHAIKH</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Date of Birth</td>
+                        <td>: 2004-03-03</td>
+                    </tr>
+                    <tr>
+                        <td class="label">State</td>
+                        <td>: West Bengal, India</td>
+                    </tr>
+                    <tr>
+                        <td class="label">District</td>
+                        <td>: Nadia</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Course Name</td>
+                        <td>: Electrician</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Course Duration</td>
+                        <td>: As per training record</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Period of Service</td>
+                        <td>: -- - 2026-11-07</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Certificate ID</td>
+                        <td>: SB-2026-E(TX)RKP</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Date of Issue</td>
+                        <td>: 2026-11-07</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Status</td>
+                        <td>: Valid</td>
+                    </tr>
+                </table>
+
+                <div class="qr-section">
+                    <!-- এখানে আপনার QR কোডের ইমেজ লিংক বসাবেন -->
+                    <img src="qr-code.png" alt="QR Code">
+                    <br>
+                    <a href="#" class="verify-btn">SKILL BHARAT EDUCATION VERIFY ✓</a>
+                </div>
+            </div>
+
+            <!-- Barcode -->
+            <div class="barcode-section">
+                <!-- এখানে আপনার বারকোডের ইমেজ লিংক বসাবেন -->
+                <div style="font-family: monospace; font-size: 18px; letter-spacing: 2px;">|||||| |||| ||||| |||||||</div>
+                <div class="barcode-text">SB-2026-L(TX)RKP</div>
+            </div>
+
+            <!-- Footer / Signatures -->
+            <div class="footer-section">
+                <div class="signature-box">
+                    Authorized Signature<br>
+                    <strong>SKILL BHARAT EDUCATION</strong>
+                </div>
+                <div class="footer-slogan">
+                    Better Skills...<br>
+                    Brighter Future...
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
