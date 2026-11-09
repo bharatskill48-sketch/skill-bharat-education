@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://bharatskill48-sketch.github.io/skill-bharat-education/sitemap.xml
