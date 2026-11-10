@@ -1,0 +1,25 @@
+# SKILL BHARAT Education
+
+Official website: https://bharatskill48-sketch.github.io/skill-bharat-education/
+Organization name: SKILL BHARAT Education
+Contact: bharatskill48@gmail.com
+
+## About
+SKILL BHARAT Education is an online vocational learning and student-services website. It shares learning resources and provides website features for students interested in practical and job-oriented skills.
+
+## Learning areas
+- Electrician: basic electrical concepts, wiring fundamentals and electrical safety.
+- Mobile Repairing: mobile hardware, tools and troubleshooting fundamentals.
+- Computer Science: computer fundamentals, software and programming basics.
+- AC Technician: air-conditioning fundamentals, maintenance concepts and safety.
+- General Trade: workshop safety, hand tools, communication and job readiness.
+
+## Website services
+- Student registration and login.
+- Online admission applications.
+- Study materials and student dashboard.
+- Digital student ID features.
+- Certificate applications and Certificate ID search.
+
+## Accuracy and verification
+Use the official website for current course availability, admission requirements and certificate status. Certificate status and issuance depend on the records and administrator review available through the website. Do not infer government affiliation, accreditation, licensing or employment guarantees from this file.
