@@ -2,297 +2,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official information about SKILL BHARAT EDUCATION, its vocational courses, student services, admission and certificate verification.">
-  <meta name="keywords" content="SKILL BHARAT EDUCATION, Electrician, AC Technician, Computer IT, Mobile Repairing, Vocational Education">
-  <meta name="author" content="SKILL BHARAT EDUCATION">
-  <title>About Us | SKILL BHARAT EDUCATION</title>
-  <link rel="canonical" href="https://bharatskill48-sketch.github.io/skill-bharat-education/about.html">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f5fa;
-      color: #18304d;
-      line-height: 1.7;
-    }
-    header {
-      background: linear-gradient(135deg,#052954,#087c91);
-      color: white;
-      text-align: center;
-      padding: 35px 18px;
-    }
-    header h1 { margin: 0 0 8px; font-size: 30px; }
-    header p { margin: 0; }
-    nav {
-      background: #073b78;
-      padding: 13px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 7px 12px;
-      display: inline-block;
-      font-weight: bold;
-    }
-    .language {
-      text-align: center;
-      padding: 20px 10px 0;
-    }
-    button {
-      border: 0;
-      border-radius: 7px;
-      padding: 11px 22px;
-      margin: 4px;
-      background: #073b78;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button.active { background: #d9a52b; color: #172b45; }
-    .container {
-      max-width: 1050px;
-      margin: auto;
-      padding: 22px 16px;
-    }
-    .hero, .section {
-      background: white;
-      border-radius: 13px;
-      padding: 24px;
-      margin-bottom: 20px;
-      box-shadow: 0 3px 14px rgba(0,0,0,.06);
-    }
-    h2 { color: #073b78; margin-top: 0; }
-    .courses {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 15px;
-    }
-    .course {
-      background: #f2f6fc;
-      border-left: 4px solid #d9a52b;
-      border-radius: 8px;
-      padding: 16px;
-    }
-    .course h3 { margin-top: 0; color: #073b78; }
-    .contact a { color: #075e9b; overflow-wrap: anywhere; }
-    footer {
-      text-align: center;
-      background: #052954;
-      color: white;
-      padding: 22px 12px;
-    }
-    .lang-hi { display: none; }
-    body.hindi .lang-en { display: none; }
-    body.hindi .lang-hi { display: block; }
-    @media(max-width:600px) {
-      header h1 { font-size: 24px; }
-      .hero, .section { padding: 18px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | SKILL BHARAT EDUCATION</title>
+<meta name="description" content="Official information about SKILL BHARAT EDUCATION, skill learning, student services, admission and certificate verification.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bharatskill48-sketch.github.io/skill-bharat-education/about.html">
+
+<style>
+:root{--blue:#073b78;--deep:#052954;--gold:#d9a52b;--green:#07845b;--bg:#f2f5fa}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#263445;line-height:1.7}
+a{text-decoration:none}
+.topbar{background:var(--deep);color:white;text-align:center;padding:9px;font-size:13px}
+header{background:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;border-bottom:3px solid var(--gold)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:65px;height:65px;object-fit:contain}
+.brand h1{color:var(--blue);font-size:21px}
+.brand p{color:var(--green);font-size:12px;font-weight:bold}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+select{padding:10px;border:1px solid #ccd5e2;border-radius:7px;background:white}
+.btn{display:inline-block;background:var(--blue);color:white;padding:10px 16px;border-radius:7px;font-weight:bold;border:0;cursor:pointer}
+.btn:hover{background:var(--green)}
+nav{background:var(--blue);display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:12px}
+nav a{color:white;font-size:14px;font-weight:bold}
+nav a:hover{color:#ffdc75}
+.hero{background:linear-gradient(120deg,#052954,#073b78,#07845b);color:white;text-align:center;padding:55px 18px}
+.hero h2{font-size:clamp(25px,5vw,39px);margin-bottom:12px}
+.hero p{max-width:760px;margin:auto}
+.container{max-width:1150px;margin:auto;padding:30px 18px}
+.section{background:white;padding:26px;margin-bottom:24px;border-radius:13px;box-shadow:0 4px 18px #0000000d;scroll-margin-top:15px}
+.section h2{color:var(--blue);font-size:23px;margin-bottom:15px;border-left:5px solid var(--gold);padding-left:12px}
+.section p{margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:18px}
+.course{background:#f5f8fc;border:1px solid #e1e8f1;border-radius:10px;padding:17px}
+.course h3{color:var(--blue);font-size:16px;margin-bottom:8px}
+.course p{color:#64748b;font-size:14px;margin:0}
+.num{display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;background:var(--blue);color:white;border-radius:50%;margin-right:7px;font-size:12px}
+ul{padding-left:23px}
+li{margin-bottom:8px}
+.notice{background:#fff8e6;border-left:5px solid var(--gold);padding:16px;border-radius:8px;margin-top:15px}
+.contact{background:#edf5ff;padding:18px;border-radius:10px}
+.contact a{color:var(--blue);font-weight:bold;overflow-wrap:anywhere}
+footer{background:var(--deep);color:white;text-align:center;padding:25px 15px;font-size:14px}
+footer a{color:#ffdc75}
+@media(max-width:600px){header{justify-content:center}.brand h1{font-size:18px}nav{gap:12px}nav a{font-size:13px}.section{padding:19px}.hero{padding:40px 17px}}
+</style>
 </head>
+
 <body>
 
+<div class="topbar" data-en="SKILL BHARAT EDUCATION | Skill Learning & Student Support" data-hi="स्किल भारत एजुकेशन | कौशल शिक्षा और छात्र सहायता">SKILL BHARAT EDUCATION | Skill Learning & Student Support</div>
+
 <header>
-  <h1>SKILL BHARAT EDUCATION</h1>
-  <p class="lang-en">Practical Skills • Technical Learning • Career Development</p>
-  <p class="lang-hi">व्यावहारिक कौशल • तकनीकी शिक्षा • करियर विकास</p>
+  <div class="brand">
+    <img src="skill-bharat-logo.jpg" alt="SKILL BHARAT EDUCATION Logo" onerror="this.style.display='none'">
+    <div>
+      <h1>SKILL BHARAT EDUCATION</h1>
+      <p data-en="Skilled India, Stronger India" data-hi="कुशल भारत, सशक्त भारत">Skilled India, Stronger India</p>
+    </div>
+  </div>
+  <div class="actions">
+    <select id="languageSelect" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+    <a class="btn" href="index.html" data-en="Home" data-hi="होम">Home</a>
+  </div>
 </header>
 
 <nav>
-  <a href="index.html">Home / मुख्य पृष्ठ</a>
-  <a href="#about">About / परिचय</a>
-  <a href="#courses">Courses / पाठ्यक्रम</a>
-  <a href="#services">Services / सेवाएँ</a>
-  <a href="#contact">Contact / संपर्क</a>
+  <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+  <a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a>
+  <a href="#courses" data-en="Courses" data-hi="पाठ्यक्रम">Courses</a>
+  <a href="#services" data-en="Student Services" data-hi="छात्र सेवाएं">Student Services</a>
+  <a href="#admission" data-en="Admission" data-hi="प्रवेश">Admission</a>
+  <a href="#verification" data-en="Verification" data-hi="सत्यापन">Verification</a>
+  <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
 </nav>
 
-<div class="language">
-  <button id="englishBtn" class="active" onclick="setLanguage('en')">English</button>
-  <button id="hindiBtn" onclick="setLanguage('hi')">हिन्दी</button>
-</div>
+<section class="hero">
+  <h2 data-en="Welcome to SKILL BHARAT EDUCATION" data-hi="स्किल भारत एजुकेशन में आपका स्वागत है">Welcome to SKILL BHARAT EDUCATION</h2>
+  <p data-en="Supporting skill development, vocational learning and student services through accessible educational information and online facilities." data-hi="सुलभ शैक्षिक जानकारी और ऑनलाइन सुविधाओं के माध्यम से कौशल विकास, व्यावसायिक शिक्षा और छात्र सेवाओं में सहायता।">Supporting skill development, vocational learning and student services through accessible educational information and online facilities.</p>
+</section>
 
 <main class="container">
 
-  <section class="hero" id="about">
-    <div class="lang-en">
-      <h2>About SKILL BHARAT EDUCATION</h2>
-      <p>
-        SKILL BHARAT EDUCATION is a private online vocational learning
-        and student services platform focused on practical skills,
-        technical education and career-oriented learning.
-      </p>
-      <p>
-        The platform provides vocational learning resources, student
-        registration, online admission applications, student dashboard
-        facilities and certificate-related services.
-      </p>
-    </div>
-    <div class="lang-hi">
-      <h2>SKILL BHARAT EDUCATION के बारे में</h2>
-      <p>
-        SKILL BHARAT EDUCATION एक निजी ऑनलाइन व्यावसायिक शिक्षा और
-        छात्र सेवा प्लेटफॉर्म है। इसका उद्देश्य व्यावहारिक कौशल,
-        तकनीकी शिक्षा और करियर से संबंधित सीखने के अवसर प्रदान करना है।
-      </p>
-      <p>
-        यह प्लेटफॉर्म शिक्षा सामग्री, छात्र पंजीकरण, ऑनलाइन प्रवेश
-        आवेदन, छात्र डैशबोर्ड और प्रमाणपत्र संबंधी सेवाएँ प्रदान करता है।
-      </p>
-    </div>
-  </section>
+<section class="section" id="about">
+  <h2 data-en="About Us" data-hi="हमारे बारे में">About Us</h2>
+  <p data-en="SKILL BHARAT EDUCATION is a private educational and skill-learning initiative focused on vocational learning, practical knowledge, student support and skill development." data-hi="स्किल भारत एजुकेशन एक निजी शैक्षिक और कौशल-शिक्षण पहल है, जिसका ध्यान व्यावसायिक शिक्षा, व्यावहारिक ज्ञान, छात्र सहायता और कौशल विकास पर है।">SKILL BHARAT EDUCATION is a private educational and skill-learning initiative focused on vocational learning, practical knowledge, student support and skill development.</p>
+  <p data-en="Our aim is to help learners explore different skill areas and access useful educational information and online student services." data-hi="हमारा उद्देश्य विद्यार्थियों को विभिन्न कौशल क्षेत्रों की जानकारी और उपयोगी ऑनलाइन छात्र सेवाएं उपलब्ध कराने में सहायता करना है।">Our aim is to help learners explore different skill areas and access useful educational information and online student services.</p>
+  <p data-en="We aim to make skill-related learning information accessible to students from different backgrounds." data-hi="हम विभिन्न पृष्ठभूमि के विद्यार्थियों तक कौशल संबंधी शैक्षिक जानकारी पहुंचाने का प्रयास करते हैं।">We aim to make skill-related learning information accessible to students from different backgrounds.</p>
+  <div class="notice">
+    <strong data-en="Organisation Information: " data-hi="संस्था की जानकारी: ">Organisation Information: </strong>
+    <span data-en="SKILL BHARAT EDUCATION is a private initiative. Government recognition, affiliation or accreditation should not be assumed unless separately confirmed by an authorised body." data-hi="स्किल भारत एजुकेशन एक निजी पहल है। किसी अधिकृत संस्था द्वारा अलग से पुष्टि किए बिना इसे सरकारी मान्यता, संबद्धता या प्रत्यायन प्राप्त नहीं माना जाना चाहिए।">SKILL BHARAT EDUCATION is a private initiative. Government recognition, affiliation or accreditation should not be assumed unless separately confirmed by an authorised body.</span>
+  </div>
+</section>
 
-  <section class="section" id="courses">
-    <div class="lang-en">
-      <h2>Our Courses & Learning Areas</h2>
-      <div class="courses">
-        <div class="course">
-          <h3>Electrician</h3>
-          <p>Electrical fundamentals, safety, wiring, circuits and tools.</p>
-        </div>
-        <div class="course">
-          <h3>AC Technician</h3>
-          <p>Air conditioning, refrigeration, maintenance and safety.</p>
-        </div>
-        <div class="course">
-          <h3>Computer / IT</h3>
-          <p>Computer fundamentals, operating systems, networking and IT skills.</p>
-        </div>
-        <div class="course">
-          <h3>Mobile Repairing</h3>
-          <p>Mobile hardware, components, troubleshooting and repair fundamentals.</p>
-        </div>
-        <div class="course">
-          <h3>General Trade</h3>
-          <p>Workshop safety, hand tools, measuring tools and practical skills.</p>
-        </div>
-        <div class="course">
-          <h3>Plumber / Plumbing</h3>
-          <p>Pipes, fittings, water supply, drainage and plumbing fundamentals.</p>
-        </div>
-      </div>
-    </div>
+<section class="section" id="courses">
+  <h2 data-en="Our Skill Learning Areas" data-hi="हमारे कौशल शिक्षा क्षेत्र">Our Skill Learning Areas</h2>
+  <p data-en="The following are skill-learning areas covered by our educational information and learning initiative. Course availability and admission status may vary." data-hi="निम्नलिखित हमारे शैक्षिक और कौशल-शिक्षण पहल के अंतर्गत आने वाले क्षेत्र हैं। पाठ्यक्रम की उपलब्धता और प्रवेश की स्थिति अलग-अलग हो सकती है।">The following are skill-learning areas covered by our educational information and learning initiative. Course availability and admission status may vary.</p>
 
-    <div class="lang-hi">
-      <h2>हमारे पाठ्यक्रम और सीखने के क्षेत्र</h2>
-      <div class="courses">
-        <div class="course">
-          <h3>Electrician</h3>
-          <p>बिजली की मूल बातें, सुरक्षा, वायरिंग, सर्किट और उपकरण।</p>
-        </div>
-        <div class="course">
-          <h3>AC Technician</h3>
-          <p>एयर कंडीशनिंग, रेफ्रिजरेशन, रखरखाव और सुरक्षा।</p>
-        </div>
-        <div class="course">
-          <h3>Computer / IT</h3>
-          <p>कंप्यूटर, ऑपरेटिंग सिस्टम, नेटवर्किंग और IT कौशल।</p>
-        </div>
-        <div class="course">
-          <h3>Mobile Repairing</h3>
-          <p>मोबाइल हार्डवेयर, कंपोनेंट और मरम्मत की मूल बातें।</p>
-        </div>
-        <div class="course">
-          <h3>General Trade</h3>
-          <p>कार्यशाला सुरक्षा, औजार और व्यावहारिक कौशल।</p>
-        </div>
-        <div class="course">
-          <h3>Plumber / Plumbing</h3>
-          <p>पाइप, फिटिंग, पानी की आपूर्ति और जल निकासी।</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="grid">
 
-  <section class="section" id="services">
-    <div class="lang-en">
-      <h2>Student Services</h2>
-      <ul>
-        <li>Student Registration and Login</li>
-        <li>Online Admission Applications</li>
-        <li>Student Dashboard and Profile</li>
-        <li>Learning Materials</li>
-        <li>Certificate Application</li>
-        <li>Certificate ID Verification</li>
-        <li>Certificate PDF Download (subject to approval)</li>
-      </ul>
-      <h2>Admission Information</h2>
-      <p>Students can visit our official website to explore available courses and submit online admission applications. Requirements and course availability are subject to the information published on the website.</p>
-      <h2>Certificate Verification</h2>
-      <p>Certificate applications are subject to administrator review. Students can check certificate status using the Certificate ID through the official verification facility. Approval must not be assumed without checking the actual status.</p>
-    </div>
+    <article class="course"><h3><span class="num">01</span><span data-en="Electrician" data-hi="इलेक्ट्रीशियन">Electrician</span></h3><p data-en="Basic electrical concepts, wiring and electrical safety." data-hi="बुनियादी विद्युत सिद्धांत, वायरिंग और विद्युत सुरक्षा।">Basic electrical concepts, wiring and electrical safety.</p></article>
 
-    <div class="lang-hi">
-      <h2>छात्र सेवाएँ</h2>
-      <ul>
-        <li>छात्र पंजीकरण और लॉगिन</li>
-        <li>ऑनलाइन प्रवेश आवेदन</li>
-        <li>छात्र डैशबोर्ड और प्रोफाइल</li>
-        <li>अध्ययन सामग्री</li>
-        <li>प्रमाणपत्र आवेदन</li>
-        <li>प्रमाणपत्र ID सत्यापन</li>
-        <li>स्वीकृति के बाद प्रमाणपत्र PDF डाउनलोड</li>
-      </ul>
-      <h2>प्रवेश जानकारी</h2>
-      <p>छात्र आधिकारिक वेबसाइट पर पाठ्यक्रम देख सकते हैं और ऑनलाइन प्रवेश आवेदन जमा कर सकते हैं। आवश्यकताएँ और पाठ्यक्रम की उपलब्धता वेबसाइट पर प्रकाशित जानकारी के अनुसार होंगी।</p>
-      <h2>प्रमाणपत्र सत्यापन</h2>
-      <p>प्रमाणपत्र आवेदन की जाँच प्रशासन द्वारा की जाती है। छात्र आधिकारिक सत्यापन सुविधा में Certificate ID का उपयोग करके स्थिति जाँच सकते हैं। वास्तविक स्थिति जाँचे बिना स्वीकृति नहीं माननी चाहिए।</p>
-    </div>
-  </section>
+    <article class="course"><h3><span class="num">02</span><span data-en="Mobile Repairing" data-hi="मोबाइल रिपेयरिंग">Mobile Repairing</span></h3><p data-en="Mobile phone components, troubleshooting and repair basics." data-hi="मोबाइल फोन के पुर्जे, समस्या पहचान और मरम्मत की मूल बातें।">Mobile phone components, troubleshooting and repair basics.</p></article>
 
-  <section class="section contact" id="contact">
-    <div class="lang-en">
-      <h2>Official Contact</h2>
-      <p><strong>Organization:</strong> SKILL BHARAT EDUCATION</p>
-      <p><strong>Email:</strong> <a href="mailto:bharatskill48@gmail.com">bharatskill48@gmail.com</a></p>
-      <p><strong>Website:</strong>
-        <a href="https://bharatskill48-sketch.github.io/skill-bharat-education/">
-          Official Website
-        </a>
-      </p>
-    </div>
-    <div class="lang-hi">
-      <h2>आधिकारिक संपर्क</h2>
-      <p><strong>संस्थान:</strong> SKILL BHARAT EDUCATION</p>
-      <p><strong>ईमेल:</strong> <a href="mailto:bharatskill48@gmail.com">bharatskill48@gmail.com</a></p>
-      <p><strong>वेबसाइट:</strong>
-        <a href="https://bharatskill48-sketch.github.io/skill-bharat-education/">
-          आधिकारिक वेबसाइट
-        </a>
-      </p>
-    </div>
-  </section>
+    <article class="course"><h3><span class="num">03</span><span data-en="Computer Science" data-hi="कंप्यूटर साइंस">Computer Science</span></h3><p data-en="Computer fundamentals, digital skills and basic IT knowledge." data-hi="कंप्यूटर की मूल बातें, डिजिटल कौशल और बुनियादी आईटी ज्ञान।">Computer fundamentals, digital skills and basic IT knowledge.</p></article>
 
-  <section class="section">
-    <div class="lang-en">
-      <h2>Important Information</h2>
-      <p>SKILL BHARAT EDUCATION is presented as a private educational platform. Government affiliation, government approval, accreditation or official licensing should not be claimed without independently verified documentary evidence.</p>
-    </div>
-    <div class="lang-hi">
-      <h2>महत्वपूर्ण जानकारी</h2>
-      <p>SKILL BHARAT EDUCATION एक निजी शैक्षिक प्लेटफॉर्म है। स्वतंत्र रूप से सत्यापित आधिकारिक दस्तावेज़ों के बिना सरकारी संबद्धता, सरकारी मान्यता या आधिकारिक लाइसेंस का दावा नहीं किया जाना चाहिए।</p>
-    </div>
-  </section>
+    <article class="course"><h3><span class="num">04</span><span data-en="AC Technician" data-hi="एसी टेक्नीशियन">AC Technician</span></h3><p data-en="Air-conditioning fundamentals, maintenance and safety." data-hi="एयर कंडीशनिंग की मूल बातें, रखरखाव और सुरक्षा।">Air-conditioning fundamentals, maintenance and safety.</p></article>
+
+    <article class="course"><h3><span class="num">05</span><span data-en="General Trade & Employability" data-hi="सामान्य ट्रेड और रोजगार कौशल">General Trade & Employability</span></h3><p data-en="Workplace readiness, communication and general trade skills." data-hi="कार्यस्थल की तैयारी, संचार और सामान्य ट्रेड कौशल।">Workplace readiness, communication and general trade skills.</p></article>
+
+    <article class="course"><h3><span class="num">06</span><span data-en="Solar Technician" data-hi="सोलर टेक्नीशियन">Solar Technician</span></h3><p data-en="Solar energy basics, components and installation awareness." data-hi="सौर ऊर्जा की मूल बातें, उपकरण और स्थापना की जानकारी।">Solar energy basics, components and installation awareness.</p></article>
+
+    <article class="course"><h3><span class="num">07</span><span data-en="CCTV Technician" data-hi="सीसीटीवी टेक्नीशियन">CCTV Technician</span></h3><p data-en="CCTV equipment, camera setup and basic maintenance." data-hi="सीसीटीवी उपकरण, कैमरा सेटअप और बुनियादी रखरखाव।">CCTV equipment, camera setup and basic maintenance.</p></article>
+
+    <article class="course"><h3><span class="num">08</span><span data-en="Welding" data-hi="वेल्डिंग">Welding</span></h3><p data-en="Welding processes, tools and workshop safety." data-hi="वेल्डिंग प्रक्रियाएं, उपकरण और कार्यशाला सुरक्षा।">Welding processes, tools and workshop safety.</p></article>
+
+    <article class="course"><h3><span class="num">09</span><span data-en="Motor Winding" data-hi="मोटर वाइंडिंग">Motor Winding</span></h3><p data-en="Electric motor components and winding fundamentals." data-hi="इलेक्ट्रिक मोटर के पुर्जे और वाइंडिंग की मूल बातें।">Electric motor components and winding fundamentals.</p></article>
+
+    <article class="course"><h3><span class="num">10</span><span data-en="Automobile Mechanic" data-hi="ऑटोमोबाइल मैकेनिक">Automobile Mechanic</span></h3><p data-en="Vehicle systems, servicing and maintenance basics." data-hi="वाहन प्रणालियां, सर्विसिंग और रखरखाव की मूल बातें।">Vehicle systems, servicing and maintenance basics.</p></article>
+
+    <article class="course"><h3><span class="num">11</span><span data-en="Graphic Design" data-hi="ग्राफिक डिजाइन">Graphic Design</span></h3><p data-en="Design principles, digital graphics and creative tools." data-hi="डिजाइन सिद्धांत, डिजिटल ग्राफिक्स और रचनात्मक उपकरण।">Design principles, digital graphics and creative tools.</p></article>
+
+    <article class="course"><h3><span class="num">12</span><span data-en="Computer Programming" data-hi="कंप्यूटर प्रोग्रामिंग">Computer Programming</span></h3><p data-en="Programming fundamentals, coding logic and web basics." data-hi="प्रोग्रामिंग की मूल बातें, कोडिंग लॉजिक और वेब की जानकारी।">Programming fundamentals, coding logic and web basics.</p></article>
+
+    <article class="course"><h3><span class="num">13</span><span data-en="Plumber / Plumbing" data-hi="प्लंबर / प्लंबिंग">Plumber / Plumbing</span></h3><p data-en="Plumbing tools, pipe systems, fittings and maintenance basics." data-hi="प्लंबिंग उपकरण, पाइप सिस्टम, फिटिंग और रखरखाव की मूल बातें।">Plumbing tools, pipe systems, fittings and maintenance basics.</p></article>
+
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2 data-en="Student Services" data-hi="छात्र सेवाएं">Student Services</h2>
+  <p data-en="Online student facilities and support information may include:" data-hi="ऑनलाइन छात्र सुविधाओं और सहायता में निम्नलिखित शामिल हो सकते हैं:">Online student facilities and support information may include:</p>
+  <ul>
+    <li data-en="Student registration and login" data-hi="छात्र पंजीकरण और लॉगिन">Student registration and login</li>
+    <li data-en="Online admission application" data-hi="ऑनलाइन प्रवेश आवेदन">Online admission application</li>
+    <li data-en="Student dashboard and profile information" data-hi="छात्र डैशबोर्ड और प्रोफाइल जानकारी">Student dashboard and profile information</li>
+    <li data-en="Course and learning information" data-hi="पाठ्यक्रम और शिक्षा संबंधी जानकारी">Course and learning information</li>
+    <li data-en="Student ID card information" data-hi="छात्र पहचान पत्र की जानकारी">Student ID card information</li>
+    <li data-en="Certificate application information" data-hi="प्रमाणपत्र आवेदन की जानकारी">Certificate application information</li>
+    <li data-en="Certificate ID verification facility, where available" data-hi="उपलब्ध होने पर प्रमाणपत्र आईडी सत्यापन सुविधा">Certificate ID verification facility, where available</li>
+    <li data-en="Student support and contact information" data-hi="छात्र सहायता और संपर्क जानकारी">Student support and contact information</li>
+  </ul>
+</section>
+
+<section class="section" id="admission">
+  <h2 data-en="Admission Information" data-hi="प्रवेश जानकारी">Admission Information</h2>
+  <p data-en="Interested learners can visit our website to check available admission facilities and course-related information." data-hi="इच्छुक विद्यार्थी उपलब्ध प्रवेश सुविधाओं और पाठ्यक्रम संबंधी जानकारी के लिए हमारी वेबसाइट देख सकते हैं।">Interested learners can visit our website to check available admission facilities and course-related information.</p>
+  <p data-en="Applicants should read the course details, eligibility conditions, fees and applicable terms before submitting an application." data-hi="आवेदन जमा करने से पहले आवेदकों को पाठ्यक्रम विवरण, पात्रता, शुल्क और लागू शर्तें पढ़नी चाहिए।">Applicants should read the course details, eligibility conditions, fees and applicable terms before submitting an application.</p>
+  <a class="btn" href="index.html" data-en="Visit Website for Admission" data-hi="प्रवेश के लिए वेबसाइट देखें">Visit Website for Admission</a>
+</section>
+
+<section class="section" id="verification">
+  <h2 data-en="Certificate Verification" data-hi="प्रमाणपत्र सत्यापन">Certificate Verification</h2>
+  <p data-en="Students and visitors may use the certificate verification facility on our website, if available, to check certificate details." data-hi="उपलब्ध होने पर विद्यार्थी और आगंतुक हमारी वेबसाइट पर प्रमाणपत्र सत्यापन सुविधा का उपयोग कर सकते हैं।">Students and visitors may use the certificate verification facility on our website, if available, to check certificate details.</p>
+  <p data-en="Always verify certificate information through the official verification facility and contact us if any information needs clarification." data-hi="प्रमाणपत्र की जानकारी सत्यापन सुविधा से जांचें और किसी स्पष्टीकरण के लिए हमसे संपर्क करें।">Always verify certificate information through the official verification facility and contact us if any information needs clarification.</p>
+  <a class="btn" href="index.html" data-en="Visit Verification Website" data-hi="सत्यापन वेबसाइट देखें">Visit Verification Website</a>
+</section>
+
+<section class="section" id="contact">
+  <h2 data-en="Contact Us" data-hi="हमसे संपर्क करें">Contact Us</h2>
+  <p data-en="For general enquiries and student support, contact SKILL BHARAT EDUCATION using the official email address below." data-hi="सामान्य पूछताछ और छात्र सहायता के लिए नीचे दिए गए आधिकारिक ईमेल पते पर संपर्क करें।">For general enquiries and student support, contact SKILL BHARAT EDUCATION using the official email address below.</p>
+  <div class="contact">
+    <p><strong>SKILL BHARAT EDUCATION</strong></p>
+    <p>Email: <a href="mailto:bharatskill48@gmail.com">bharatskill48@gmail.com</a></p>
+    <p>Website: <a href="https://bharatskill48-sketch.github.io/skill-bharat-education/">SKILL BHARAT EDUCATION</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <h2 data-en="Important Disclaimer" data-hi="महत्वपूर्ण अस्वीकरण">Important Disclaimer</h2>
+  <p data-en="SKILL BHARAT EDUCATION is a private initiative. Listing a skill area on this page does not by itself mean that a course is currently open, officially approved, accredited or government-recognised. Please confirm current availability, fees, course details and certificate status before applying." data-hi="स्किल भारत एजुकेशन एक निजी पहल है। इस पृष्ठ पर किसी कौशल क्षेत्र का उल्लेख होने मात्र से यह नहीं माना जाना चाहिए कि पाठ्यक्रम वर्तमान में उपलब्ध, आधिकारिक रूप से अनुमोदित, मान्यता प्राप्त या सरकारी मान्यता प्राप्त है। आवेदन से पहले उपलब्धता, शुल्क, पाठ्यक्रम विवरण और प्रमाणपत्र की स्थिति की पुष्टि करें।">SKILL BHARAT EDUCATION is a private initiative. Listing a skill area on this page does not by itself mean that a course is currently open, officially approved, accredited or government-recognised. Please confirm current availability, fees, course details and certificate status before applying.</p>
+</section>
 
 </main>
 
 <footer>
-  <p>© <span id="year"></span> SKILL BHARAT EDUCATION</p>
-  <p class="lang-en">Official Information Page</p>
-  <p class="lang-hi">आधिकारिक जानकारी पृष्ठ</p>
+  <h3>SKILL BHARAT EDUCATION</h3>
+  <p data-en="Skilled India, Stronger India" data-hi="कुशल भारत, सशक्त भारत">Skilled India, Stronger India</p>
+  <div class="footer-links">
+    <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+    <a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a>
+    <a href="#courses" data-en="Courses" data-hi="पाठ्यक्रम">Courses</a>
+    <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+  </div>
+  <p>© <span id="year"></span> SKILL BHARAT EDUCATION. All Rights Reserved.</p>
 </footer>
 
 <script>
+(function () {
+  const selector = document.getElementById("languageSelect");
+
   function setLanguage(language) {
-    document.body.classList.toggle('hindi', language === 'hi');
     document.documentElement.lang = language;
-    document.getElementById('englishBtn').classList.toggle('active', language === 'en');
-    document.getElementById('hindiBtn').classList.toggle('active', language === 'hi');
+
+    document.querySelectorAll("[data-en][data-hi]").forEach(function (element) {
+      const text = element.getAttribute("data-" + language);
+      if (text !== null) {
+        element.textContent = text;
+      }
+    });
+
+    selector.value = language;
   }
-  document.getElementById('year').textContent = new Date().getFullYear();
+
+  selector.addEventListener("change", function () {
+    setLanguage(selector.value);
+  });
+
+  setLanguage("en");
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
 </script>
 
 </body>
