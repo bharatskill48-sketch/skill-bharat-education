@@ -1,0 +1,20 @@
+
+{
+  "id": "./",
+  "name": "SKILL BHARAT Education",
+  "short_name": "SKILL BHARAT",
+  "description": "SKILL BHARAT Education - Online Vocational Learning, Student Admission, Courses and Certificate Verification.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#073b78",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
